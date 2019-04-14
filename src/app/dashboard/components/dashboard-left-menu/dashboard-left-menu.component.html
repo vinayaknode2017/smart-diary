@@ -7,11 +7,10 @@
           <li><i class="fas fa-chalkboard icon"></i>Standard</li>
           <li><i class="fab fa-medium-m icon"></i>Medium</li>
           <li><i class="fas fa-book-open icon"></i>Subjects</li>
-          <li class="collapsed">
-              <i class="fas fa-users icon"></i>Staff
-            <a data-toggle="modal" data-target="#staffs" role="button"></a>
+          <li data-target="#sub-staff" data-toggle="collapse" role="button">
+            <i class="fas fa-users icon"></i>Staff
           </li>
-          <ul class="sub-menu modal" id="staffs">
+          <ul class="nav collapse sub-menu" id="sub-staff" role="menu">
               <li>Teaching</li>
               <li>Non-Teaching</li>
           </ul>
