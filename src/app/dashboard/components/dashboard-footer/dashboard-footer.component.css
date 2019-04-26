@@ -1,0 +1,15 @@
+.dashboard-header{
+    height: 10%;
+    width: 97%;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    bottom: 0%;
+    border: 5px solid black;
+
+    transition: margin 400ms ease-out;
+
+    text-align: center;
+    font-size: 40px;
+}

@@ -12,4 +12,14 @@ export class DashboardLeftMenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  public OnMouseHover() {
+    document.getElementById("myheader").style.marginLeft = "260px";
+    document.getElementById("myfooter").style.marginLeft = "260px";
+  }
+
+  public OnMouseLeave() {
+    console.log('right');
+    document.getElementById("myheader").style.marginLeft = "0px";
+    document.getElementById("myfooter").style.marginLeft = "0px";
+  }
 }

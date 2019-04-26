@@ -1,22 +1,22 @@
 
 .sidebar{
-    -webkit-transition: margin 400ms ease-out;
-      -moz-transition: margin 400ms ease-out;
-      -o-transition: margin 400ms ease-out;
-      transition: margin 400ms ease-out;
-
-    width: 100px;
-    height: 100%;
-    margin-left: -260px;
-    float: left;
-    z-index: 8000;
-    margin-bottom: 0px;
+  /* -webkit-transition: margin 400ms ease-out;
+    -moz-transition: margin 400ms ease-out;
+    -o-transition: margin 400ms ease-out; */
+    
+  transition: margin 400ms ease-out;
+  width: 100px;
+  height: 100%;
+  margin-left: -260px;
+  float: left;
+  z-index: 8000;
+  margin-bottom: 0px;
 }
 
 .sidebar:hover{
-    margin-left: 0px;
+  margin-left: 0px;
 }
-    
+
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
