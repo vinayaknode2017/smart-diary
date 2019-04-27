@@ -1,15 +1,31 @@
-.dashboard-header{
-    height: 10%;
+.dashboard-footer{
+    height: 4%;
     width: 97%;
-    background-color: green;
-    display: inline-block;
+    background-color: #f4f4f4;
+    display: inline;
     position: absolute;
     left: 40px;
     bottom: 0%;
-    border: 5px solid black;
 
     transition: margin 400ms ease-out;
 
     text-align: center;
-    font-size: 40px;
+    padding-top: 4px;
+    font-size: 12px;
+    font-weight: bold;
 }
+
+.content {
+    float: left;
+    margin-left: 40%;
+
+}
+
+.icons {
+    background-color: honeydew;
+    border-radius: 50%;
+    width: 18px;
+    float: left;
+    margin-left: 10px;
+}
+
