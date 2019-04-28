@@ -4,16 +4,24 @@
     <div class="col-md-12">
       
       <div class="jumbotron col-md-4">
+          
           <div class="form-group">
               <label for="username">User Name:</label>
-              <input type="text" id="username" placeholder="user name" class="form-control">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="email" id="username" placeholder="user name" class="form-control">
+              </div>
           </div>
   
           <div class="form-group">
               <label for="password">Password:</label>
-              <input type="password" id="password" placeholder="password" class="form-control">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                <input type="password" id="password" placeholder="password" class="form-control">
+              </div>
           </div>
   
+          <span><a>forgot password?</a></span>
           <button class="btn btn-primary pull-right">Login</button>
       </div>
 
