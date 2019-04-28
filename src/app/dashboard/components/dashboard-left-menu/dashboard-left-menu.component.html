@@ -1,8 +1,13 @@
 <aside (mouseover)="OnMouseHover()" (mouseleave)="OnMouseLeave()">
-    <nav class="navbar navbar-inverse sidebar navbar-fixed-top">
+    <nav id="sidenav" class="navbar navbar-inverse sidebar navbar-fixed-top">
       <div class="nav-side-menu">
         <ul>
-          <li><i class="fas fa-bars icon"></i>Menu<i class="fas fa-thumbtack icon-pin"></i></li>
+          <li><i class="fas fa-bars icon"></i>Menu
+            <span class="icon-pin" (click)="OnToggleLeftMenuPin()">
+              <span *ngIf="isLeftMenuPinned===false"><i class="fas fa-thumbtack"></i></span>  
+              <span *ngIf="isLeftMenuPinned===true"><i class="far fa-times-circle"></i></span>  
+            </span>
+          </li>
           <li><i class="fas fa-building icon"></i>About School</li>
           <li><i class="fas fa-chalkboard icon"></i>Standard</li>
           <li><i class="fab fa-medium-m icon"></i>Medium</li>

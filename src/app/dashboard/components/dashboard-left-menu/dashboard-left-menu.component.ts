@@ -7,19 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardLeftMenuComponent implements OnInit {
 
+isLeftMenuPinned: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   public OnMouseHover() {
-    document.getElementById("myheader").style.marginLeft = "260px";
-    document.getElementById("myfooter").style.marginLeft = "260px";
+    if(this.isLeftMenuPinned === false) {
+      document.getElementById("myheader").style.marginLeft = "260px";
+      document.getElementById("myfooter").style.marginLeft = "260px";
+      document.getElementById("sidenav").style.marginLeft = "0";
+    }
   }
 
   public OnMouseLeave() {
-    console.log('right');
-    document.getElementById("myheader").style.marginLeft = "0px";
-    document.getElementById("myfooter").style.marginLeft = "0px";
+    if(this.isLeftMenuPinned === false) {
+      document.getElementById("myheader").style.marginLeft = "0px";
+      document.getElementById("myfooter").style.marginLeft = "0px";
+      document.getElementById("sidenav").style.margin = "-260px";
+    }
+  }
+
+  public OnToggleLeftMenuPin() {
+    console.log(this.isLeftMenuPinned);
+    if(this.isLeftMenuPinned === false) {
+      this.isLeftMenuPinned = true;
+      document.getElementById("myheader").style.marginLeft = "260px";
+      document.getElementById("myfooter").style.marginLeft = "260px";
+      document.getElementById("sidenav").style.margin = "0";
+    }
+    else {
+      this.isLeftMenuPinned = false;
+      document.getElementById("myheader").style.marginLeft = "0";
+      document.getElementById("myfooter").style.marginLeft = "0";
+      document.getElementById("sidenav").style.margin = "-260px";
+    }
   }
 }
